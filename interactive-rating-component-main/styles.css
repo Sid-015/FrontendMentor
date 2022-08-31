@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(21, 21, 24);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin: auto;
+    padding: 1.5rem;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 7%;
+    max-width:17rem;
+    min-height: 18rem;
+}
+
+h1{
+    color:white;
+    font-weight:400;
+    font-size: 1.75rem;
+    margin-bottom: 0rem;
+}
+
+p{
+    font-size:0.75rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color:hsl(217, 12%, 63%)
+}
+
+.star-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(213, 19%, 23%);
+    border-radius: 50%;
+    height: 2.5rem;
+    width:2.5rem;
+    margin-top: 0.75rem;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+input{
+    display: none;
+}
+
+label{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: hsl(213, 19%, 23%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(217, 12%, 63%);
+}
+
+input:checked + label{
+    transition: all 0.5s;
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+button{
+    border: none;
+    width: 100vh;
+    margin-top: 1.5rem;
+    border-radius: 2rem;
+    color:white;
+    background-color: hsl(25, 97%, 53%);
+    height: 2.25rem;
+}
+
+@media (hover: hover) {
+    form label:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+    }  
+}
+
+button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.rating{
+    background-color: hsl(213, 19%, 23%);
+    color: hsl(25, 97%, 53%);
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    height: 1.5rem;
+    margin: 2rem 2rem 0 2rem;
+}
+
+.tu-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto 0 auto;
+}
+
+.hidden{
+    display:none;
+}
+
