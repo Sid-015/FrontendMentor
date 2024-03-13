@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Inter";
+}
+
+button {
+    width: 100%;
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.6rem;
+}
+
+img {
+    border-radius: 50%;
+    height: 9rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.card {
+    width: 30rem;
+    border-radius: 1.2rem;
+    font-size: 1.4rem;
+    background-color: hsl(0, 0%, 12%);
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+button:hover {
+    color: hsl(0, 0%, 12%);
+    background-color: hsl(75, 94%, 57%);
+}
+
+@media only screen and (max-width:550px) {
+    body {
+        padding: 2rem;
+    }
+
+    .card {
+        width: 80%;
+        border-radius: 2rem;
+    }
+}
